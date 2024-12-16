@@ -6,7 +6,7 @@ process.stdin.resume();
 process.stdin.setEncoding('utf-8');
 
 // let inputString = [ '6', '1 2 3 4 10 11' ]; // Ejecutar con node app.js
-let inputString = "";
+let inputString = '';
 let currentLine = 0;
 
 process.stdin.on('data', function(inputStdin) {
@@ -20,7 +20,7 @@ process.stdin.on('end', function() {
 });
 
 function readLine() {
-    return inputString[currentLine++] || "";
+    return inputString[currentLine++];
 }
 
 
